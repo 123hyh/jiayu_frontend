@@ -1,12 +1,18 @@
 {
-  "name": "scm-vue-component",
+  "name": "jiayu-filters",
   "version": "1.0.0",
   "description": "",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
+  "types": "./dist/index.d.ts",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "729791f181db1b8fa850b7bb226e02da2443ee48"
 }

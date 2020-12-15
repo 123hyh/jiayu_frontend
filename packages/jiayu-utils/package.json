@@ -1,13 +1,18 @@
 {
-  "name": "scm-filters",
+  "name": "jiayu-utils",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
   "keywords": [],
   "types": "./dist/index.d.ts",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "gitHead": "729791f181db1b8fa850b7bb226e02da2443ee48"
 }
