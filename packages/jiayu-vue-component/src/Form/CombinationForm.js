@@ -3,13 +3,13 @@
  * @Author: huangyuhui
  * @Date: 2020-09-27 11:00:47
  * @LastEditors: huangyuhui
- * @LastEditTime: 2020-12-09 13:58:39
+ * @LastEditTime: 2020-12-15 19:47:44
  * @Description: 组合表单组件
- * @FilePath: \scm_frontend_common\src\vue-component\Form\CombinationForm.js
+ * @FilePath: \jiayu-vue-component\src\Form\CombinationForm.js
  */
 import { getSize, getCodeDict } from '../index';
 
-import { forEachObject } from '../utils';
+import { forEachObject } from 'jiayu-utils';
 import { cloneDeepWith, debounce } from 'lodash-es';
 import { Form, FormItem, Tooltip } from 'element-ui';
 import './CombinationForm.scss';

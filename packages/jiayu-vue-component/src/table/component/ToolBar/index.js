@@ -2,15 +2,15 @@
  * @Author: huangyuhui
  * @Date: 2020-09-22 14:24:41
  * @LastEditors: huangyuhui
- * @LastEditTime: 2020-12-15 13:42:42
+ * @LastEditTime: 2020-12-15 19:51:07
  * @Description: 工具栏组件
- * @FilePath: \scm_frontend_common\src\vue-component\table\component\ToolBar\index.js
+ * @FilePath: \jiayu-vue-component\src\table\component\ToolBar\index.js
  */
 import './index.scss';
 import { debounce } from 'lodash-es';
 import Drawer from './Drawer';
 import { Tooltip, Button } from 'element-ui';
-import { getScmMsg } from '../../../../locale';
+import { getScmMsg } from '../../../locale';
 export default {
   name: 'SCM_ToolBar',
   components: {

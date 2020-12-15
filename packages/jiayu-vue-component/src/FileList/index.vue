@@ -2,9 +2,9 @@
  * @Author: huangyuhui
  * @Date: 2020-12-15 16:45:02
  * @LastEditors: huangyuhui
- * @LastEditTime: 2020-12-15 18:50:43
+ * @LastEditTime: 2020-12-15 19:44:51
  * @Description: 文件上传公共组件
- * @FilePath: \scm_frontend_common\src\vue-component\FileList\index.vue
+ * @FilePath: \jiayu-vue-component\src\FileList\index.vue
 -->
 
 <template>
@@ -45,9 +45,9 @@
 <script>
 import CombinationTable from '../table/CombinationTable';
 import { Button } from 'element-ui';
-import { booleanToText } from '../../filters';
+import { booleanToText } from 'jiayu-filters';
 import BoolTag from '../BoolTag';
-import { getScmMsg } from '../../locale';
+import { getScmMsg } from '../locale';
 export default {
   name: 'ScmFile',
   components: {

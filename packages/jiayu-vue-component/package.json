@@ -13,5 +13,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "gitHead": "729791f181db1b8fa850b7bb226e02da2443ee48"
+  "gitHead": "729791f181db1b8fa850b7bb226e02da2443ee48",
+  "devDependencies": {
+    "element-ui": "^2.14.1",
+    "jiayu-filters": "^1.1.0",
+    "jiayu-utils": "^1.1.0",
+    "jquery": "^3.5.1",
+    "lodash-es": "^4.17.15"
+  }
 }

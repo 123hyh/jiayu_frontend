@@ -3,11 +3,11 @@
  * @Author: huangyuhui
  * @Date: 2020-09-28 15:03:25
  * @LastEditors: huangyuhui
- * @LastEditTime: 2020-12-11 17:23:01
+ * @LastEditTime: 2020-12-15 19:47:07
  * @Description:
- * @FilePath: \scm_frontend_common\src\vue-component\Form\useDict.js
+ * @FilePath: \jiayu-vue-component\src\Form\useDict.js
  */
-import { forEachObject } from '@/utils';
+import { forEachObject } from 'jiayu-utils';
 import { getCodeDict } from '../index.ts';
 import { cloneDeepWith } from 'lodash-es';
 

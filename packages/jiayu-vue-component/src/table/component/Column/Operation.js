@@ -2,13 +2,13 @@
  * @Author: huangyuhui
  * @Date: 2020-09-22 16:49:17
  * @LastEditors: huangyuhui
- * @LastEditTime: 2020-12-15 13:42:25
+ * @LastEditTime: 2020-12-15 19:50:27
  * @Description:
- * @FilePath: \scm_frontend_common\src\vue-component\table\component\Column\Operation.js
+ * @FilePath: \jiayu-vue-component\src\table\component\Column\Operation.js
  */
 
 import { cloneDeepWith } from 'lodash-es';
-import { getScmMsg } from '../../../../locale';
+import { getScmMsg } from '../../../locale';
 
 const getText = ( key, i18nHandler ) => key && i18nHandler  ? i18nHandler( key ) : key;
 

@@ -2,9 +2,9 @@
  * @Author: huangyuhui
  * @Date: 2020-09-22 14:21:55
  * @LastEditors: huangyuhui
- * @LastEditTime: 2020-12-10 16:34:26
+ * @LastEditTime: 2020-12-15 19:49:49
  * @Description: 基础表格组件
- * @FilePath: \scm_frontend_common\src\vue-component\table\BaseTable.js
+ * @FilePath: \jiayu-vue-component\src\table\BaseTable.js
  */
 
 import { cloneDeepWith, debounce } from 'lodash-es';
@@ -12,7 +12,7 @@ import { getSize } from '../index';
 import './BaseTable.scss';
 import ColumnComponent from './component/Column/index.js';
 import OperationComponent from './component/Column/Operation.js'; 
-import { forEachObject } from '../utils';
+import { forEachObject } from 'jiayu-utils';
 import { Table, TableColumn, Checkbox, Radio } from 'element-ui';
 
 export default {

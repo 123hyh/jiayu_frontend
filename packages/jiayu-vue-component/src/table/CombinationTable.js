@@ -2,15 +2,15 @@
  * @Author: huangyuhui
  * @Date: 2020-09-23 17:07:25
  * @LastEditors: huangyuhui
- * @LastEditTime: 2020-12-09 14:17:38
+ * @LastEditTime: 2020-12-15 19:50:00
  * @Description: 组合表格( 查询栏 、工具、表格 、分页 )
- * @FilePath: \scm_frontend_common\src\vue-component\table\CombinationTable.js
+ * @FilePath: \jiayu-vue-component\src\table\CombinationTable.js
  */
 import QueryBar from '../QueryBar/index.js';
 import ToolBar from './component/ToolBar/index.js';
 import Pagination from './component/Pagination/index.js';
 import BaseTable from './BaseTable.js';
-import { forEachObject } from '../utils';
+import { forEachObject } from 'jiayu-utils';
 import { useIndexedDb } from '../indexedDb';
 import { cloneDeepWith } from 'lodash-es';
 function addSuffix( str ) {

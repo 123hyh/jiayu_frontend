@@ -2,12 +2,12 @@
  * @Author: huangyuhui
  * @Date: 2020-12-15 17:36:59
  * @LastEditors: huangyuhui
- * @LastEditTime: 2020-12-15 17:45:06
+ * @LastEditTime: 2020-12-15 19:45:06
  * @Description: 布尔tag 组件
- * @FilePath: \scm_frontend_common\src\vue-component\BoolTag\index.js
+ * @FilePath: \jiayu-vue-component\src\BoolTag\index.js
  */
 
-import { booleanToText } from '../../filters';
+import { booleanToText } from 'jiayu-filters';
 import './index.scss';
 export default {
   name:'BoolTag',

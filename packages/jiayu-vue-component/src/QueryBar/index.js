@@ -2,17 +2,17 @@
  * @Author: huangyuhui
  * @Date: 2020-09-21 15:55:42
  * @LastEditors: huangyuhui
- * @LastEditTime: 2020-12-15 13:41:15
+ * @LastEditTime: 2020-12-15 19:49:19
  * @Description: 查询栏组件
- * @FilePath: \scm_frontend_common\src\vue-component\QueryBar\index.js
+ * @FilePath: \jiayu-vue-component\src\QueryBar\index.js
  */
 import { cloneDeepWith, debounce } from 'lodash-es';
 import './index.scss';
 import SCMForm from '../Form/index';
 import { Button, Link } from 'element-ui';
-import { getScmMsg } from '../../locale';
+import { getScmMsg } from '../locale';
 export default {
-  name: 'SCM_QueryBar',
+  name: 'SCMQueryBar',
   components: {
     SCMForm,
     ElButton: Button,

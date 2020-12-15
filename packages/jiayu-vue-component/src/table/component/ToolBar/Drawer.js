@@ -2,14 +2,14 @@
  * @Author: huangyuhui
  * @Date: 2020-09-25 13:38:01
  * @LastEditors: huangyuhui
- * @LastEditTime: 2020-12-15 13:52:42
+ * @LastEditTime: 2020-12-15 19:50:47
  * @Description: 工具栏 抽屉 - 用于 表格字段修改
- * @FilePath: \scm_frontend_common\src\vue-component\table\component\ToolBar\Drawer.js
+ * @FilePath: \jiayu-vue-component\src\table\component\ToolBar\Drawer.js
  */
 import { cloneDeepWith } from 'lodash-es';
 import { Drawer, Tree, Button, InputNumber } from 'element-ui';
 import './Drawer.scss';
-import { getScmMsg } from '../../../../locale';
+import { getScmMsg } from '../../../locale';
 export default {
   props: {
     visible: {
