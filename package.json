@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "build": "rollup --config ./rollup.config.js"
+    "build": "rollup -c ./scripts/prod.js"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

@@ -1,31 +1,18 @@
 /*
  * @Author: your name
  * @Date: 2020-12-09 23:22:06
- * @LastEditTime: 2020-12-15 20:32:50
- * @LastEditors: huangyuhui
+ * @LastEditTime: 2020-12-15 23:31:43
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \jiayu_frontend\scripts\prod.js
  */
 const path = require('path');
-const execa = require('execa')
-
-const getPath = _path => path.resolve(__dirname, _path);
-
+const getPath = (_path) => path.resolve(__dirname, _path);
+import generateRollupConfig from '../rollup.config.copy.js';
 const targets = [
-  getPath('../packages/jiayu-filters/src'),
-  getPath('../packages/jiayu-utils/src'),
-]
-run(targets)
-async function  run(targets) {
-  const data = await Promise.all(
-    targets.map(
-      item => execa(
-        'rollup',
-        [
-          '--config ../rollup.config.js',
-          '--environment',
-        ]
-      )
-    )
-  )
-}
+  getPath('../packages/jiayu-filters'),
+  getPath('../packages/jiayu-utils'),
+  getPath('../packages/jiayu-directives')
+];
+
+export default targets.map(generateRollupConfig);
