@@ -1,0 +1,32 @@
+.side-enter-active {
+  animation: side-in 0.2s linear;
+}
+.side-leave-active {
+  position: fixed !important;
+  animation: side-out 0.2s linear;
+}
+@keyframes side-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes side-out {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}

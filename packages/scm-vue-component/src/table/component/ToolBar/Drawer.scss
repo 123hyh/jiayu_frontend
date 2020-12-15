@@ -1,0 +1,58 @@
+.scm-tool-bar-drawer {
+  .el-tree-node {
+    padding-block-start: 5px;
+    padding-block-end: 5px;
+  }
+  .el-drawer__body {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin-bottom: 75px;
+    .el-tree {
+      flex: 1 1 100%;
+      .el-icon-sort{
+        font-size: 16px;
+      }
+      .is-fixed,.is-sort {
+        color: #0085fa;
+      }
+      .tree-row-block {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .field-label {
+          flex-basis: 70%;
+        }
+        .lock-icon-block {
+          flex-basis: 20px;
+        }
+        .setting-width-wrap{
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          .el-input__inner{
+            border-radius: 1px;
+          }
+        }
+      }
+    }
+  }
+
+  .scm-tool-bar-drawer-block {
+    display: flex;
+    justify-content: center;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+    .el-button {
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
+    }
+  }
+
+  /* 关闭按钮去黑边 */
+  .el-drawer__close-btn:focus {
+    outline: none;
+  }
+  
+}

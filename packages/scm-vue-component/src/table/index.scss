@@ -1,0 +1,17 @@
+.scm-table-container {
+  overflow: auto;
+  .el-table {
+    tr th {
+      background-color: #EDF1F9;
+      >.cell{
+        font-size: 14px;
+        color: #333333;
+        font-family: Microsoft YaHei;
+        font-weight: initial;
+      }
+    }
+    .scm-table-header-label .tip-icon{
+      padding: 5px;
+    }
+  }
+}

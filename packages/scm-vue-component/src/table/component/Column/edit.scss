@@ -1,0 +1,12 @@
+.scm-table-column-edit-wrap{
+  display: flex;
+  gap: 5px  ;
+  .scm-combination-form{
+    display: block;
+    padding: 0;  
+  }
+  
+  .edit-column-wrap{
+    flex: 1;
+  }
+}

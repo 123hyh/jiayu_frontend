@@ -1,0 +1,66 @@
+@mixin layout {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+$radiusSize: 1px;
+$containerBgColor: #ffffff;
+.scm_query-bar-container {
+  @include layout;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: $containerBgColor;
+  /* 表单区 */
+  .query-bar-form-block {
+    @include layout;
+    align-items: flex-start;
+    .el-form-item {
+      .el-input__inner {
+        border-radius: $radiusSize;
+      }
+      &.el-form-item {
+        margin-bottom: 10px;
+      }
+      &.form-item-date {
+        @include layout;
+        .el-form-item__content {
+          .el-date-editor {
+            width: auto;
+            padding: 0px 10px;
+          }
+          height: 40px;
+          width: 260px;
+        }
+      }
+      &.form-item-select .el-form-item__content {
+        width: 180px;
+      }
+    }
+  }
+  /* 更多查询 打开 和 关闭查询 */
+  .hide-more {
+    max-height: 41px;
+    overflow: hidden;
+  }
+  .more-btn-wrap {
+    align-self: flex-start;
+  }
+
+  /* 按钮区 */
+  .query-buttons-container {
+    $bgColor: #0086fa;
+    @include layout;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    [type="button"] {
+      padding: 9px 27px;
+      border-radius: $radiusSize;
+    }
+    .el-button--primary {
+      background-color: $bgColor;
+    }
+  }
+}

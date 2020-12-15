@@ -1,0 +1,109 @@
+$color: #343434;
+@mixin Overideinput {
+  border-radius: 1px;
+}
+@mixin layout() {
+  .scm-form-item {
+    font-size: 16px;
+    color: $color;
+    box-sizing: border-box;
+    margin: 0 0 0 0 !important;
+    margin-bottom: 1em !important;
+    display: flex !important;
+    align-items: center;
+    @media (min-width: 1366px) {
+      flex: 0 1 33.333%;
+    }
+    @media (min-width: 1600px) {
+      flex: 0 1 25%;
+    }
+    .el-form-item__label {
+      /* overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; */
+      line-height: normal;
+      display: inline;
+      float: none;
+      .tip-icon {
+        padding: 5px;
+      }
+    }
+
+    .el-form-item__content {
+      flex: 1;
+      .el-select,
+      .el-date-editor      {
+        width: 100%;
+        >.el-date-picker{
+          width:100%;
+          .el-picker-panel__content{
+            width:100%
+          }
+        }
+      }
+      .el-textarea > .el-textarea__inner {
+        @include Overideinput;
+      }
+      .el-checkbox-group{
+        display: flex;
+      }
+
+      /* 表单 禁用状态 */
+      .el-input,
+      .el-textarea {
+        &.is-disabled {
+          .el-input__inner,
+          .el-textarea__inner {
+            border: none;
+            color: #7b7b7b;
+          }
+          .el-input__suffix {
+            display: none;
+          }
+        }
+      }
+      .el-input__inner {
+        @include Overideinput;
+        box-sizing: border-box;
+        transition: outline 0.1s linear;
+        &:focus {
+          border-color: #409eff;
+        }
+      }
+    }
+  }
+}
+.scm-combination-form {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  @include layout;
+  .scm-form-card {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+    .scm-form-card-title {
+      color: $color;
+      font-size: 16px;
+      .toggle-icon {
+        cursor: pointer;
+        text-indent: 0.5em;
+        &:hover {
+          color: #0086fa;
+        }
+      }
+    }
+    .hidden-form {
+      height: 0;
+      padding: 0 !important;
+      overflow: hidden;
+    }
+    .scm-form-card-container {
+      box-sizing: border-box;
+      border: 1px solid #dadada;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

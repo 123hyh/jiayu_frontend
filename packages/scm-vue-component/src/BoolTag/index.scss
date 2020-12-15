@@ -1,0 +1,17 @@
+@mixin customs-bool {
+  width: 2em;
+  height: 2em;
+  font-size: 12px;
+  border-radius: 50%;
+  color: #fff;
+  margin: 0 auto;
+}
+/* 列表 布尔值 样式 */
+.customs-yes {
+  @include customs-bool;
+  background-color: #22ac38;
+}
+.customs-no {
+  @include customs-bool;
+  background-color: #f39800;
+}

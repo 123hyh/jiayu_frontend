@@ -1,0 +1,43 @@
+$tabsHeight: 50px;
+$fontFamily: MicrosoftYaHei;
+.scm-tabs-wrapper{
+  all: unset;
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  .scm-tabs-item {
+    border: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 20px;
+    height: $tabsHeight;
+    background-color: #eef1f9;
+    font-family: $fontFamily;
+    color: #333333;
+    transition: background 0.2s linear; 
+    .scm-tabs-item-link{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  .is-disabled{
+    cursor: not-allowed;
+  }
+  .is-active{
+    color: #0085fa;
+    background: #fff;
+  }
+  *{
+    user-select: none;
+  }
+}
