@@ -1,29 +1,25 @@
 /*
  * @Author: your name
  * @Date: 2020-12-09 23:22:06
- * @LastEditTime: 2020-12-15 23:36:06
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-12-16 13:33:31
+ * @LastEditors: huangyuhui
  * @Description: In User Settings Edit
- * @FilePath: \jiayu_frontend\rollup.config.js
+ * @FilePath: \jiayu_frontend\rollup.config.copy.js
  */
 const path = require('path');
 const getPath = (_path) => path.resolve(__dirname, _path);
 import json from '@rollup/plugin-json';
 import babel from '@rollup/plugin-babel';
 import tsPlugin from 'rollup-plugin-typescript2';
-import sass from 'rollup-plugin-sass';
+// import sass from 'rollup-plugin-sass';
 const extensions = ['.js', '.ts', '.tsx'];
 export default (packPath) => {
-  console.log(packPath);
-  debugger;
   return {
     input: `${packPath}/src/index.ts`,
-    output: [
-      {
-        file: `${packPath}/dist/index.js`,
-        format: 'esm',
-      },
-    ],
+    output: {
+      file: `${packPath}/dist/index.js`,
+      format: 'esm',
+    },
     plugins: [
       json(),
       tsPlugin({

@@ -10,7 +10,7 @@
     "src/*"
   ],
   "keywords": [],
-  "types": "./dist/index.d.ts",
+  "types": "./dist/jiayu-utils/src/index.d.ts",
   "author": "",
   "license": "ISC",
   "description": "",

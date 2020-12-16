@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
+  "types": "./dist/jiayu-directives/src/index.d.ts",
   "author": "",
   "license": "ISC",
   "gitHead": "729791f181db1b8fa850b7bb226e02da2443ee48"
